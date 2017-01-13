@@ -5,11 +5,11 @@ TODO : Please provide a detailed project description.
 ## Build status
 
 TODO : Modify to match your project specific Travis Build
-[![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka)
+[![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka)
 
 ## Web Site
 
-TODO : Please provide a link to your web site ![](http://node8.codenvy.io:36397/)
+TODO : Please provide a link to your web site ![](https://hidden-headland-83300.herokuapp.com/)
 
 ## Key Features
 
