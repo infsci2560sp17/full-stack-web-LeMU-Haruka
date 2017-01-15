@@ -10,7 +10,7 @@ TODO : Modify to match your project specific Travis Build
 ## Web Site
 
 TODO : Please provide a link to your web site:https://hidden-headland-83300.herokuapp.com/
-(https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/%E6%89%B6%E6%A1%91%E5%A4%8F%E5%AD%A3.png)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/%E6%89%B6%E6%A1%91%E5%A4%8F%E5%AD%A3.png)
 ## Key Features
 
 TODO : Please list key features of your project.
