@@ -4,7 +4,6 @@ TODO : Please provide a detailed project description.
 
 ## Build status
 
-TODO : Modify to match your project specific Travis Build
 [![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka)
 
 ## Changelog
@@ -13,9 +12,9 @@ TODO : Modify to match your project specific Travis Build
 
 ## Web Site
 
-TODO : Please provide a link to your web site: https://lemu-harukaweb.herokuapp.com/
+https://lemu-harukaweb.herokuapp.com/
 
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/fuso.png)
+![](https://github.com/infsci2560sp17/full-stack-wgeb-LeMU-Haruka/blob/master/bmp/fuso.png)
 
 ## Key Features
 
