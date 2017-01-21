@@ -14,7 +14,7 @@ TODO : Please provide a detailed project description.
 
 https://lemu-harukaweb.herokuapp.com/
 
-![](https://github.com/infsci2560sp17/full-stack-wgeb-LeMU-Haruka/blob/master/bmp/fuso.png)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/fuso.png)
 
 ## Key Features
 
