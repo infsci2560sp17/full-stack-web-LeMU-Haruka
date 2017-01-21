@@ -18,9 +18,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [1.1] - 2017-01-21
 ### Added
-- Cloned, configured, and compiled the scaffold project.
-- Configured developer workspace.
-- Deployed to Heroku.
+nothing
+
 [Unreleased]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.2...HEAD
 [1.2]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.1...1.2
 [1.1]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haurka/compare/...1.1
