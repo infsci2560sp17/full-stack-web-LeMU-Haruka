@@ -16,10 +16,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
     - How will it meet the minimum project requirements?
     - Why is your proposed Web application unique or creative beyond simply meeting the minimum requirements?
 
-## [1.1] - 2017-01-21
+## [1.00] - 2017-01-23
 ### Added
-nothing
+The frame of whole project. 
+The travis CI link.
+The website of this project.
+The CHANGELOG.
+
+
 
 [Unreleased]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.2...HEAD
 [1.2]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/commit/da99ac140f372538c098fbc6d07f30ab1f60cd12
-[1.1]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haurka/compare/...1.1
+[1.00]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/...1.00
