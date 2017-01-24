@@ -1,13 +1,21 @@
-# TODO : Your Project Name
+# Strategy for Kancolle
 
-TODO : Please provide a detailed project description.
-
+1. What is the proposed name for your Web application?
+    - Strategy for Kancolle
+2. Who is the target audience for your Web application?
+    - The Kancolle players who needs game strategy for Winter Event 2016 and normal maps
+3. What problem is it intended to solve for the target audience?
+    - It will provide strategy for Kancolle players to let them know how to use the ships they have to build a powerful fleet and pass the Winter Event 2016.
+4. How will it meet the minimum project requirements?
+    - It will provide specific data of enemy fleet, including fleet configuration, how many air force requied for each point in each map and the basic requirement to get to the final battle for each map. What's more, I will provide my own opinion about each map, how to build fleet can have the best change to win the fight. According to my experience before, my strategy was always very helpful. So this time I want to put them on the website to let more people can see it. 
+5. Why is your proposed Web application unique or creative beyond simply meeting the minimum requirements?
+    - Nomally, the strategy is published on the BBS or facebook just as what I did before. Both of them have lots of format limitations. For example, I prefer to show all configurations of enemy. On BBS, it will take a big part of page, so that the whole strategy seems expatiatory and the visual effect is so bad, so I normally will ignore this part and reply it in the comments when somebody have question about it. This is not easy for all people to see. Thus, if building a web application, it can have a better visual effect and meet all players' need.
+     
 ## Build status
 
 [![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-LeMU-Haruka)
 
 ## Changelog
-
 [Changelog](CHANGELOG.md)
 
 ## Web Site
