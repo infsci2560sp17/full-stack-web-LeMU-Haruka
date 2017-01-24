@@ -22,7 +22,7 @@
 
 https://lemu-harukaweb.herokuapp.com/
 
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/fuso.png)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/kancolle.jpg)
 
 ## Key Features
 
