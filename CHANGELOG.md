@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Added
  - Index page
  - Comment function
-
+ - Series java files for website
  
 # [1.10] - 2017-01-23
 ### Added
