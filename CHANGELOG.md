@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [Unreleased]
 ### coming soon
 
+
+# [1.20] - 2017-02-14
+### Added
+ - Index page
+ - Comment function
+
+ 
 # [1.10] - 2017-01-23
 ### Added
  - The project name.
@@ -20,6 +27,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - The CHANGELOG.
 
 
-
+[1.20]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.10...1.20
 [1.10]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.00...1.10
 [1.00]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/...1.00

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <title>User Home</title>
+    </head>
+    <body>
+   <pre> Here is prepare for the content!!!!
+   
+   
+   
+   
+   
+   
+   
+   
+   </pre>
+<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
+
+        <div>
+            <table style="border: 1px solid black;table-layout:fixed;">
+                <tr>
+                    <th>Floor</th>
+                    <th>Comment</th>
+                    <th>Type</th>
+                    
+                </tr>                
+                <tr data-th-each="Kancolle :${Kancolle}">
+                   <td style="text-align:center;vertical-align:middle;" data-th-text="${Kancolle.id}"></td>
+                    <td style="width:400px;word-wrap:break-all;word-break: break-all;" data-th-text="${Kancolle.comment}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${Kancolle.CommentType}"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <hr />
+        Wrtite your comment:<br />
+        <form data-th-action="@{/Kancolle/add}" name="addKancolleForm" method="post">
+            <textarea style="width:400px;height:100px;" type="text" name="Comment" /><br />
+            Choose a type:<br />
+            <input type="radio" name="CommentType" value="Bump" checked="checked" /> Just bump
+            <input type="radio" name="CommentType" value="Help" /> Need help<br />
+            <input type="radio" name="CommentType" value="Information" /> Provide Information
+            <input type="radio" name="CommentType" value="Pray" /> Pray for ship<br />
+            <input type="submit" value="Submit Comment"/>
+        </form>
+        
+        <hr />       
+        <form data-th-action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+  
+    </body>
+</html>

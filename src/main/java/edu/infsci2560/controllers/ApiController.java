@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
-public class ApiController {    
+public class ApiController {  
     private final AtomicInteger counter = new AtomicInteger();
     
     @RequestMapping("/api")        
