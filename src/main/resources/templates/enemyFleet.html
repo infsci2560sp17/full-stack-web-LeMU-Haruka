@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script type="text/javascript">
+function toggle(sDivId) {
+var oDiv = document.getElementById(sDivId);
+oDiv.style.display = (oDiv.style.display == "none") ? "block" : "none";
+}
+</script>
+        <title>User Home</title>
+<style type="text/css"> 
+.table 
+{ 
+width: 100%; 
+padding: 0; 
+margin: 0; 
+} 
+th { 
+font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+color: #4f6b72; 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+border-top: 1px solid #C1DAD7; 
+letter-spacing: 2px; 
+text-transform: uppercase; 
+text-align: left; 
+padding: 6px 6px 6px 12px; 
+background: #CAE8EA no-repeat; 
+} 
+td { 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+background: #fff; 
+font-size:14px; 
+padding: 6px 6px 6px 12px; 
+color: #4f6b72; 
+} 
+td.alt { 
+background: #F5FAFA; 
+color: #797268; 
+} 
+th.spec,td.spec { 
+border-left: 1px solid #C1DAD7; 
+} 
+/*---------for IE 5.x bug*/ 
+html>body td{ font-size:14px;} 
+tr.select th,tr.select td 
+{ 
+background-color:#CAE8EA; 
+color: #797268; 
+} 
+</style> 
+    </head>
+    <body>
+<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
+<div style="background-color:Blue;color:White;font-weight:bold;padding:10px;cursor:pointer"
+onclick="toggle('div1')">Click Here</div>
+        <div id="div1">
+            <table style="border: 1px solid black;table-layout:fixed;">
+                <tr>
+                    <th>Id</th>
+                    <th>Map</th>
+                    <th>Point</th>
+                    <th>Fleet</th>
+                    <th>Ship2</th>
+                    <th>Ship3</th>
+                    <th>Ship4</th>
+                    <th>Ship5</th>
+                    <th>Ship6</th>
+                </tr>                
+                <tr data-th-each="enemyFleet :${enemyFleet}">
+                   <td class="spec" style="text-align:center;vertical-align:middle;" data-th-text="${enemyFleet.id}"></td>
+                    <td style="word-wrap:break-all;word-break: break-all;" data-th-text="${enemyFleet.map}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.point}"></td> 
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.Flagship}"></td>        
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.name2}"></td>        
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.name3}"></td>        
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.name4}"></td>        
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.name5}"></td>        
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemyFleet.name6}"></td>        
+                </tr>
+            </table>
+        </div>      
+        <hr />
+         <p>Please Click <a data-th-href="@{/mapdata}">here</a> goto map</p>
+        <hr />       
+        <form data-th-action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+  
+    </body>
+</html>

@@ -25,20 +25,20 @@ public class Kancolle {
     protected Long id;
     protected String comment;
     protected CommentType commenttype;
-    //protected String floor;
+    protected String floor;
 
     public Kancolle() {
         this.id = Long.MAX_VALUE;
         this.comment = "nothing";
         this.commenttype = CommentType.Bump;
-        //this.floor= this.id+"L";
+        //this.floor= this.id+"";
     }
 
     public Kancolle(Long id, String comment, CommentType commenttype) {
         this.id = id;
         this.comment = comment;
         this.commenttype = commenttype;
-     //   this.floor=id+"L";
+       // this.floor=id+"l";
     }
 
     @Override
@@ -98,11 +98,11 @@ public class Kancolle {
         this.id = id;
     }
     
-   //  public String getFloor() {
-     //   return floor;
-   // }
+  //   public String getFloor() {
+    //    return floor;
+    //}
      //public void setFloor(Long id) {
-       //this.floor= id+"L";
+      // this.floor= this.id+"l";
     //}
 
 

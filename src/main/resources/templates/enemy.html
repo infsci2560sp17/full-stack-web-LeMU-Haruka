@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>User Home</title>
+<style type="text/css"> 
+.table 
+{ 
+width: 100%; 
+padding: 0; 
+margin: 0; 
+} 
+th { 
+font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+color: #4f6b72; 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+border-top: 1px solid #C1DAD7; 
+letter-spacing: 2px; 
+text-transform: uppercase; 
+text-align: left; 
+padding: 6px 6px 6px 12px; 
+background: #CAE8EA no-repeat; 
+} 
+td { 
+border-right: 1px solid #C1DAD7; 
+border-bottom: 1px solid #C1DAD7; 
+background: #fff; 
+font-size:14px; 
+padding: 6px 6px 6px 12px; 
+color: #4f6b72; 
+} 
+td.alt { 
+background: #F5FAFA; 
+color: #797268; 
+} 
+th.spec,td.spec { 
+border-left: 1px solid #C1DAD7; 
+} 
+/*---------for IE 5.x bug*/ 
+html>body td{ font-size:14px;} 
+tr.select th,tr.select td 
+{ 
+background-color:#CAE8EA; 
+color: #797268; 
+} 
+</style> 
+    </head>
+    <body>
+<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
+            <table style="border: 1px solid black;table-layout:fixed;">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>HP</th>
+                    <th>Fire</th>
+                    <th>Armor</th>
+                    <th>Torpedo</th>
+                    <th>Evasion</th>
+                    <th>Antiair</th>
+                </tr>                
+                <tr data-th-each="enemy :${enemy}">
+                    <td style="word-wrap:break-all;word-break: break-all;" data-th-text="${enemy.name}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.type}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.HP}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.fire}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.armor}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.torp}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.escape}"></td>
+                    <td  style="text-align:center;vertical-align:middle;word" data-th-text="${enemy.antiair}"></td>
+                </tr>
+            </table>
+        <hr />
+        <form data-th-action="@{/enemyFleet/add}" name="addenemy" method="post">
+            Choose a type:<br />
+            <input type="radio" name="ShipType" value="Battle" checked="checked" /> Battle
+            <input type="radio" name="ShipType" value="Cuiser" /> Cuiser<br />
+            <input type="radio" name="ShipType" value="Destoryer" /> Destoryer
+            <input type="radio" name="ShipType" value="Carrier" /> Carrier<br />
+            <input type="submit" value="Submit ShipType"/>
+        </form>
+         <p>Please Click <a data-th-href="@{/mapdata}">here</a> goto map</p>
+        <hr />       
+        <form data-th-action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+  
+    </body>
+</html>
