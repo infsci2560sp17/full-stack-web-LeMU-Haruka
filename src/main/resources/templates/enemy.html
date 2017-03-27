@@ -46,7 +46,6 @@ color: #797268;
 </style> 
     </head>
     <body>
-<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
             <table style="border: 1px solid black;table-layout:fixed;">
                 <tr>
                     <th>Name</th>
@@ -70,14 +69,14 @@ color: #797268;
                 </tr>
             </table>
         <hr />
-        <form data-th-action="@{/enemyFleet/add}" name="addenemy" method="post">
+   <!--     <form data-th-action="@{/enemyFleet/add}" name="addenemy" method="post">
             Choose a type:<br />
             <input type="radio" name="ShipType" value="Battle" checked="checked" /> Battle
             <input type="radio" name="ShipType" value="Cuiser" /> Cuiser<br />
             <input type="radio" name="ShipType" value="Destoryer" /> Destoryer
             <input type="radio" name="ShipType" value="Carrier" /> Carrier<br />
             <input type="submit" value="Submit ShipType"/>
-        </form>
+        </form>-->
          <p>Please Click <a data-th-href="@{/mapdata}">here</a> goto map</p>
         <hr />       
         <form data-th-action="@{/logout}" method="post">

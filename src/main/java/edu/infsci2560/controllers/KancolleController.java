@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -34,5 +37,12 @@ public class KancolleController {
         repository.save(kancolle);
         return new ModelAndView("Kancolle", "Kancolle", repository.findAll());
     }
-    
+     @RequestMapping(value = "Kancolle/delete", method = RequestMethod.GET)
+    public ModelAndView deleteComments(@RequestParam(value="id", required=true) Long id) {
+        Kancolle comment = repository.findOne(id);  
+        if ( comment != null ) {
+            repository.delete(id);
+        }
+        return new ModelAndView("Kancolle", "comment", repository.findAll());
+    }
 }

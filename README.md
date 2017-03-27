@@ -36,67 +36,74 @@ TODO : Please list key features of your project.
 
 ### Landing Page
 
-TODO : please provide a description of your landing page inluding a screen shot ![](https://.../image.JPG)
+This is a greeting page for all users,temprory. Will be changed to a better one soon!
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/home.jpg)
 
 ### User Input Form
 
-TODO : please provide a description of at least 1 user input form including a screen shot ![](https://.../image.jpg)
+This page user can input there comment to communicate with both website owner and other users.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/kancolle.jpg)
+
+### data page
+
+This is the mapdata page will show every sea area and maps in this area. Will add more data and picture of each map soon!
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mapdata.jpg)
+
+This is enemyfleet page shows every enemy fleet in each map. In order to make it clear the fleet can show and hide, which will only show exactly the map want to see in the future. More data and functions will be added soon!
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleetshow.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleethide.jpg)
+
+This is enemy ship page. Show each enemy ship's data. Will add image in the future.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemy.jpg)
 
 ## API
 
-TODO : please provide a description of at least 1 API including a sample of request data and response data in both XML and JSON format.
-
 ### API Method 1
 
-    POST photos/:id/tags
-
-#### Parameters
-
-- **id** _(required)_ — The Photo ID to add tags for.
-- **tags** _(required)_ — Comma separated tags.
+    GET enemy/:apijson
 
 #### Response
 
-A JSON or XMLobject containing the PhotoID and list of tags accepted.
+A JSON or XMLobject containing all enemy data
 
 #### Errors
 
 All known errors cause the resource to return HTTP error code header together with a JSON array containing at least 'status' and 'error' keys describing the source of error.
 
-- **404 Not Found** — The photo was not found.
+- **500 internal server error** — The enemy service errored.
+
 
 #### Example
 
 ##### Request
 
-    POST /v1/photos/123456/tags
-
-##### Body
-
-    tags=cute,puppy
-
+    GET /enemy/apijson
 
 ##### JSON Response
 
 ```json
-{
-    "photoId": 123456,
-    "tags": ["cute", "puppy"]
-}
+{"id":2,"name":"驱逐イ级","fire":6,"armor":5,"torp":15,"antiair":6,"escape":14,"type":"Destroyer","aa":6,"hp":20},
+{"id":3,"name":"驱逐ロ级","fire":7,"armor":6,"torp":16,"antiair":7,"escape":15,"type":"Destroyer","aa":7,"hp":22}
 ```
 
-##### XML Response
+### API Method 2
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<PhotoTags>
-    <photoId>123456</PhotoId>
-        <tags>
-            <tag>cute</tag>
-            <tag>puppy</tag>
-        </tags>
-</PhotoTags>
-```
+    delete Kancolle/delete/{id}
+    
+
+#### Parameters
+    
+- **id** _(required)_ — The id for comment need to delete
+
+#### Response
+
+The page show the comment already deleted.
+
+#### Example
+
+##### Request
+
+    delete Kancolle/delete/1
 
 ## Technologies Used
 
