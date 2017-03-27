@@ -37,24 +37,24 @@ TODO : Please list key features of your project.
 ### Landing Page
 
 This is a greeting page for all users,temprory. Will be changed to a better one soon!
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/home.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/home.png)
 
 ### User Input Form
 
 This page user can input there comment to communicate with both website owner and other users.
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/kancolle.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/kancolle.png)
 
 ### data page
 
 This is the mapdata page will show every sea area and maps in this area. Will add more data and picture of each map soon!
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mapdata.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mapdata.png)
 
 This is enemyfleet page shows every enemy fleet in each map. In order to make it clear the fleet can show and hide, which will only show exactly the map want to see in the future. More data and functions will be added soon!
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleetshow.jpg)
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleethide.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleetshow.png)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleethide.png)
 
 This is enemy ship page. Show each enemy ship's data. Will add image in the future.
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemy.jpg)
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemy.png)
 
 ## API
 
