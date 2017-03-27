@@ -6,7 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [Unreleased]
 ### coming soon
 
-# [1.30] - 2017-02-14
+# [1.31] - 2017-03-26
+### Added
+ - Add delete, put function in comment
+ - Add demo and api in readme
+ - Fix some bug
+ - Modify web page
+ 
+# [1.30] - 2017-03-22
 ### Added
  - Enemy page, enemyfleet page and mapdata page
  - Add related model, service, controller and repository
