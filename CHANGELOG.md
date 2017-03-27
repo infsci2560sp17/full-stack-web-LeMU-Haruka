@@ -37,7 +37,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - The travis CI link.
  - The website of this project.
  - The CHANGELOG.
-
+ 
+[1.31]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.30...1.31
 [1.30]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.20...1.30
 [1.20]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.10...1.20
 [1.10]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.00...1.10
