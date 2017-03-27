@@ -47,6 +47,7 @@ This page user can input there comment to communicate with both website owner an
 ### data page
 
 This is the mapdata page will show every sea area and maps in this area. Will add more data and picture of each map soon!
+
 ![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mapdata.png)
 
 This is enemyfleet page shows every enemy fleet in each map. In order to make it clear the fleet can show and hide, which will only show exactly the map want to see in the future. More data and functions will be added soon!
