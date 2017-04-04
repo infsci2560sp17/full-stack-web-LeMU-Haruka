@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### coming soon
 
 # [1.31] - 2017-03-26
+### Change
+ - Update a new home page
+ - update a new login page
+### Future version
+ - Other page will be updated soon!
+ - More data is coming!
+ 
+# [1.31] - 2017-03-26
 ### Added
  - Add delete, put function in comment
  - Add demo and api in readme
@@ -38,6 +46,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - The website of this project.
  - The CHANGELOG.
  
+ 
+[1.40]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.31...1.40
 [1.31]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.30...1.31
 [1.30]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.20...1.30
 [1.20]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.10...1.20
