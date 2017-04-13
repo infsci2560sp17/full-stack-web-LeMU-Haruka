@@ -2,65 +2,60 @@
 <html>
     <head>
         <title>User Home</title>
-<style type="text/css"> 
-.table 
-{ 
-width: 100%; 
-padding: 0; 
-margin: 0; 
-} 
-th { 
-font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
-color: #4f6b72; 
-border-right: 1px solid #C1DAD7; 
-border-bottom: 1px solid #C1DAD7; 
-border-top: 1px solid #C1DAD7; 
-letter-spacing: 2px; 
-text-transform: uppercase; 
-text-align: left; 
-padding: 6px 6px 6px 12px; 
-background: #CAE8EA no-repeat; 
-} 
-td { 
-border-right: 1px solid #C1DAD7; 
-border-bottom: 1px solid #C1DAD7; 
-background: #fff; 
-font-size:14px; 
-padding: 6px 6px 6px 12px; 
-color: #4f6b72; 
-} 
-td.alt { 
-background: #F5FAFA; 
-color: #797268; 
-} 
-th.spec,td.spec { 
-border-left: 1px solid #C1DAD7; 
-} 
-/*---------for IE 5.x bug*/ 
-html>body td{ font-size:14px;} 
-tr.select th,tr.select td 
-{ 
-background-color:#CAE8EA; 
-color: #797268; 
-} 
-</style> 
+
+<link rel='stylesheet' id='coupg_admin_style-css'  href='https://www.process.st/wp-content/plugins/content-upgrades-pro/res/coupg_acss.css?ver=4.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='https://www.process.st/wp-content/themes/koombea/styles/main.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://www.process.st/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://static.bootcss.com/www/assets/css/site.min.css?v5" rel="stylesheet" />
+<style type='text/css'>img#wpstats{display:none}</style>
+<style id="custom-css-css">w-text-2{margin:10px;padding:10px}</style>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
     </head>
     <body>
-   <pre> Here is prepare for the content!!!!
+       <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="/Kancolle">Home</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="hidden-sm hidden-md"><a href="/mapdata"  target="_blank" >Mapdata</a></li>
+            <li><a href="/enemy" target="_blank">Enemy</a></li>
+            <li><a href="http://wikiwiki.jp/kancolle/" target="_blank">Wiki.jp</a></li>
+            <li><a href="https://twitter.com/KanColle_STAFF" target="_blank">Twitter</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+<div class="page-wrap">
+    <div class="content-splash">
+    <h1>
+        <span class="line-1">Kancolle Station</span><br />
+            </h1>
+    <h1>
+        <span class="line-1">Kancolle Station</span><br />
+    </h1>
    
    
-   
-   </pre>
 <p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
-
-        <div>
-            <table style="border: 1px solid black;table-layout:fixed;">
+  <div class="col-xs-6">
+        <table cellpadding="0" cellspacing="0" border="0" class="table-bordered ">
                 <tr>
                     <th>Floor</th>
                     <th>Comment</th>
                     <th>Type</th>
                     <th>operation</th>
-                    
                 </tr>                
                 <tr data-th-each="Kancolle :${Kancolle}">
                    <td class="spec" style="text-align:center;vertical-align:middle;" data-th-text="${Kancolle.id}"></td>
@@ -69,19 +64,27 @@ color: #797268;
                     <td><a data-th-href="@{/Kancolle/edit/{id}(id=${Kancolle.id})}">edit</a></td>
                 </tr>
             </table>
-        </div>
-        
-        <hr />
-        Wrtite your comment:<br />
-        <form data-th-action="@{/Kancolle/add}" name="addKancolleForm" method="post">
-            <textarea style="width:400px;height:100px;" type="text" name="Comment" /><br />
-            Choose a type:<br />
+            </div>
+         <div class="row">
+            <div class="col-xs-6">
+    
+        <form role="form" data-th-action="@{/Kancolle/add}" name="addKancolleForm" method="post">
+        <div class="form-group">
+            <h1>Wrtite your comment:</h1>
+           <input class="form-control" name="title" type="text" placeholder="Nickname"/>
+            <div class="center-block" style="height:30px"></div> 
+            <textarea name="Comment" class="form-control" rows="10" placeholder="Your comment"/>
+            <label for="name">Choose a type:</label>
             <input type="radio" name="CommentType" value="Bump" checked="checked" /> Just bump
             <input type="radio" name="CommentType" value="Help" /> Need help<br />
             <input type="radio" name="CommentType" value="Information" /> Provide Information
             <input type="radio" name="CommentType" value="Pray" /> Pray for ship<br />
             <input type="submit" value="Submit Comment"/>
-        </form>
+          </div>
+         </form>
+         </div>
+         </div>
+    
         <hr />      
         <p>go to <a data-th-href="@{/enemy}">enemy</a>page</p>
         <hr />
@@ -94,5 +97,20 @@ color: #797268;
         <form data-th-action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
         </form>
+        
+        
+        
+        
+    </div>
+    </div>
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/unveil/1.3.0/jquery.unveil.min.js"></script>
+    <script src="https://cdn.bootcss.com/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="https://cdn.bootcss.com/toc/0.3.2/toc.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+    <script src="https://static.bootcss.com/www/assets/js/site.min.js"></script>
+
+
     </body>
 </html>

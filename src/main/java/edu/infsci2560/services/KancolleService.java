@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author kolobj
  */
 @RestController
-@RequestMapping("kancolle/apijson")
+@RequestMapping("Kancolle/apijson")
 public class KancolleService {
 
     @Autowired

@@ -50,7 +50,7 @@ public class enemyFleet {
 
     @Override
     public String toString() {
-        return "[ id=" + this.id + ", map=" + this.map + ", Flagship=" + this.flagship + " ]";
+        return "[ map=" + this.map + ", point=" + this.point + ", Flagship=" + this.flagship + " ]";
     }
 
     @Override
@@ -91,6 +91,16 @@ public class enemyFleet {
      * @return 
      */
     
+        public Long getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
     
     public String getFlagship() {
         return flagship;
@@ -105,16 +115,16 @@ public class enemyFleet {
     /**
      * @return the id
      */
-    public Long getId() {
-        return id;
-    }
+    //public Long getId() {
+    //    return id;
+    //}
 
     /**
      * @param id the id to set
      */
-    public void setId(Long id) {
-        this.id = id;
-    }
+   // public void setId(Long id) {
+    //    this.id = id;
+    //}
     
         /**
      * @param id the id to set

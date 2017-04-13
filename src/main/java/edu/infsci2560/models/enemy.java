@@ -56,7 +56,7 @@ public class enemy {
 
     @Override
     public String toString() {
-        return "[ id=" + this.id + ", name=" + this.name + ", Type=" + this.type + " ]";
+        return "[ id=" + this.HP + ", name=" + this.name + ", Type=" + this.type + " ]";
     }
 
     @Override
@@ -100,7 +100,11 @@ public class enemy {
     /**
      * @return the id
      */
-    public Long getId() {
+        /**
+     * @param id the id to set
+     */
+    
+        public Long getId() {
         return id;
     }
 
@@ -111,9 +115,6 @@ public class enemy {
         this.id = id;
     }
     
-        /**
-     * @param id the id to set
-     */
     public void setHP(int HP) {
         this.HP = HP;
     }

@@ -27,17 +27,18 @@ public class FullStackWebApplication {
 
         KancolleRepository repositoryk = ctx.getBean(KancolleRepository.class);
         repositoryk.save(new Kancolle(1L, "Greeting ! Here is LeMU-Haruka. ", CommentType.Bump));
-        
+    
+    
         enemyRepository repositorye = ctx.getBean(enemyRepository.class);
         repositorye.save(new enemy(1L, "驱逐イ级",20,6,5,15,6,14,ShipType.Destroyer));
-        repositorye.save(new enemy(1L, "驱逐ロ级",22,7,6,16,7,15,ShipType.Destroyer));
+        repositorye.save(new enemy(1L,"驱逐ロ级",22,7,6,16,7,15,ShipType.Destroyer));
         //repository.save(new Kancolle(2L, "Insanity", CommentType.Help));
         //repository.save(new Kancolle(3L, "Body Beast", WorkoutType.Strength));
         mapdataRepository repositorym = ctx.getBean(mapdataRepository.class);
         repositorym.save(new mapdata(1L,"1-1" ,"镇守府海域", "镇守府正面海域", 0,0,3));
-        repositorym.save(new mapdata(1L, "1-2","镇守府海域", "西南诸岛海域", 0,0,5));
+        repositorym.save(new mapdata(1L,"1-2","镇守府海域", "西南诸岛海域", 0,0,5));
         enemyFleetRepository repositoryef= ctx.getBean(enemyFleetRepository.class);
-        repositoryef.save(new enemyFleet(1L, "1-1", "A","驱逐イ级","-","-","-","-","-"));
+        repositoryef.save(new enemyFleet(1L,"1-1", "A","驱逐イ级","-","-","-","-","-"));
         
     }
 

@@ -9,6 +9,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
 @Entity
+
 public class Kancolle {
 
     private static final long serialVersionUID = 1L;

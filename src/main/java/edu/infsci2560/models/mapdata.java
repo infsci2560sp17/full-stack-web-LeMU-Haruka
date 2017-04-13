@@ -44,7 +44,7 @@ public class mapdata {
 
     @Override
     public String toString() {
-        return "Map id=" + this.id + ", belong ="+ this.belong+", name=" + this.name + ", total HP=" + this.HP + " ]";
+        return "Map id=" + this.sign + ", belong ="+ this.belong+", name=" + this.name + ", total HP=" + this.HP + " ]";
     }
 
     @Override
@@ -87,6 +87,7 @@ public class mapdata {
     /**
      * @return the id
      */
+    
     public Long getId() {
         return id;
     }
@@ -94,10 +95,10 @@ public class mapdata {
     /**
      * @param id the id to set
      */
+    
     public void setId(Long id) {
         this.id = id;
     }
-    
         /**
      * @param id the id to set
      */

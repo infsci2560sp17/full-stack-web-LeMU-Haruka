@@ -3,33 +3,6 @@
     <head>
       <meta charset="utf-8" />
       <title>Bootstrap中文网</title>
-
-      <script src="//cdn.optimizely.com/js/5966550635.js"></script><title>Process Street &#8211; Process Street is the home for your team&#039;s recurring tasks.  Create, track and optimize business process work-flows.</title>
-
-  <!-- All in One SEO Pack 2.3.12.1 by Michael Torbert of Semper Fi Web Design[2950,2971] -->
-  <meta name="description"  content="Simple workflow software for businesses. Create recurring checklists, workflows and standard operating procedures in seconds. Get a free for life account today." />
-
-  <meta name="keywords"  content="checklist, standard operating procedure, standard operating procedure software, checklist software" />
-
-  <link rel="canonical" href="https://www.process.st/" />
-  <meta property="og:title" content="Process Street" />
-  <meta property="og:type" content="blog" />
-  <meta property="og:url" content="https://www.process.st/" />
-  <meta property="og:image" content="https://www.process.st/wp-content/uploads/2016/05/psLogo.png" />
-  <meta property="og:site_name" content="Process Street" />
-  <meta property="og:description" content="Process Street is the home for your team&#039;s recurring tasks. Create, track and optimize business process work-flows." />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Process Street" />
-  <meta name="twitter:description" content="Process Street is the home for your team&#039;s recurring tasks. Create, track and optimize business process work-flows." />
-  <meta name="twitter:image" content="https://www.process.st/wp-content/uploads/2016/05/psLogo.png" />
-  <meta itemprop="image" content="https://www.process.st/wp-content/uploads/2016/05/psLogo.png" />
-  <!-- /all in one seo pack -->
-  <link rel='dns-prefetch' href='//s0.wp.com' />
-  <link rel='dns-prefetch' href='//s.w.org' />
-  <link rel="alternate" type="application/rss+xml" title="Process Street &raquo; Feed" href="https://www.process.st/feed/" />
-  <link rel="alternate" type="application/rss+xml" title="Process Street &raquo; Comments Feed" href="https://www.process.st/comments/feed/" />
-  <link rel="alternate" type="application/rss+xml" title="Process Street &raquo; Process Street | Simple Process and Workflow Management Comments Feed" href="https://www.process.st/fp-me-4/feed/" />
-
   <style type="text/css">
   img.wp-smiley,
   img.emoji {
@@ -44,18 +17,14 @@
   	padding: 0 !important;
   }
   </style>
-  <link rel='stylesheet' id='coupg_admin_style-css'  href='https://www.process.st/wp-content/plugins/content-upgrades-pro/res/coupg_acss.css?ver=4.7.3' type='text/css' media='all' />
   <link rel='stylesheet' id='main-css'  href='https://www.process.st/wp-content/themes/koombea/styles/main.css?ver=1.0.0' type='text/css' media='all' />
-  <link rel='stylesheet' id='jetpack_css-css'  href='https://www.process.st/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://static.bootcss.com/www/assets/css/site.min.css?v5" rel="stylesheet" />
-  <style type='text/css'>img#wpstats{display:none}</style>
-  <style id="custom-css-css">w-text-2{margin:10px;padding:10px}</style>
+</head>
 
-    </head>
 
    <body>
-          <div class="navbar navbar-inverse navbar-fixed-top">
+   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -81,9 +50,7 @@
     </div>
 
 
-      <div class="page-wrap">
-
-
+    <div class="page-wrap">
       <div class="content-splash">
         	<div class="center-block" style="height:50px"></div>
           <div class="col-md-4 column"></div>
@@ -98,9 +65,15 @@
             <input type="text" class="form-control" placeholder="username" name="username" />
 
           <div class="center-block" style="height:40px"></div>
-          <input type="password" class="form-control" placeholder="password" name="password" />
-                     <div class="center-block" style="height:30px"></div>
-                    <div><input type="submit" class="btn btn-success btn-block" value="Sign In" /></div>
+          <input type="password" class="form-control" placeholder="password" name="password" />  
+        <div data-th-if="${param.error}" >
+            <p class="text-danger">Invalid username and password.</p>
+        </div>
+        <div data-th-if="${param.logout}">
+             <p class="text-danger">You have been logged out.</p>
+        </div>
+         <div class="center-block" style="height:30px"></div>
+        <div><input type="submit" class="btn btn-success btn-block" value="Sign In" /></div>
               </form>
             <div class="center-block" style="height:100px"></div>
         </div>
