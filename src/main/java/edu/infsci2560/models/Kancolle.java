@@ -24,19 +24,22 @@ public class Kancolle {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
+    protected String name;
     protected String comment;
     protected CommentType commenttype;
     protected String floor;
 
     public Kancolle() {
         this.id = Long.MAX_VALUE;
+        this.name="Tester";
         this.comment = "nothing";
         this.commenttype = CommentType.Bump;
         //this.floor= this.id+"";
     }
 
-    public Kancolle(Long id, String comment, CommentType commenttype) {
+    public Kancolle(Long id,String name ,String comment, CommentType commenttype) {
         this.id = id;
+        this.name=name;
         this.comment = comment;
         this.commenttype = commenttype;
        // this.floor=id+"l";
@@ -57,9 +60,7 @@ public class Kancolle {
         return HashCodeBuilder.reflectionHashCode(this);
     }
 
-    /**
-     * @return the name
-     */
+
     public String getComment() {
         return comment;
     }
@@ -99,6 +100,16 @@ public class Kancolle {
         this.id = id;
     }
     
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
   //   public String getFloor() {
     //    return floor;
     //}

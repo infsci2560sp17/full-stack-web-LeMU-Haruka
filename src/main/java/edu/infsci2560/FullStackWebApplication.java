@@ -26,7 +26,7 @@ public class FullStackWebApplication {
         ApplicationContext ctx = SpringApplication.run(FullStackWebApplication.class, args);
 
         KancolleRepository repositoryk = ctx.getBean(KancolleRepository.class);
-        repositoryk.save(new Kancolle(1L, "Greeting ! Here is LeMU-Haruka. ", CommentType.Bump));
+        repositoryk.save(new Kancolle(1L,"LeMU_Haruka","Greeting ! Here is LeMU-Haruka. ", CommentType.Bump));
     
     
         enemyRepository repositorye = ctx.getBean(enemyRepository.class);

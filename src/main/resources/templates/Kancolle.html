@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>User Home</title>
-
+        <title>Kancolle Staion</title>
+<style type="text/css">
+        a:link {
+        color: red;
+        text-decoration: none;
+        }
+        a:visited {
+        color: red;
+        text-decoration: none;
+        }
+        a:hover {
+        color: #999999;
+        text-decoration: underline;
+        }
+</style>
 <link rel='stylesheet' id='coupg_admin_style-css'  href='https://www.process.st/wp-content/plugins/content-upgrades-pro/res/coupg_acss.css?ver=4.7.3' type='text/css' media='all' />
 <link rel='stylesheet' id='main-css'  href='https://www.process.st/wp-content/themes/koombea/styles/main.css?ver=1.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='jetpack_css-css'  href='https://www.process.st/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
@@ -13,7 +26,7 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
     </head>
     <body>
-       <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hidden-sm" href="/Kancolle">Home</a>
+          <a class="navbar-brand hidden-sm" href="/home">Home</a>
         </div>
         <div class="navbar-collapse collapse" role="navigation">
           <ul class="nav navbar-nav">
@@ -32,51 +45,90 @@
             <li><a href="https://twitter.com/KanColle_STAFF" target="_blank">Twitter</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right hidden-sm">
-            <li><a href="/login">Login</a></li>
+            <li><a href="/manage">Manage</a></li>
           </ul>
         </div>
       </div>
     </div>
-  
+
+
 <div class="page-wrap">
-    <div class="content-splash">
-    <h1>
-        <span class="line-1">Kancolle Station</span><br />
-            </h1>
-    <h1>
-        <span class="line-1">Kancolle Station</span><br />
-    </h1>
-   
-   
-<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>
+    <div class="content">
+    <div class="center-block" style="height:50px"></div>
+     <div class="row">
+         <div class="col-xs-2"></div>
+         <div class="col-xs-6">
+          <p><span style="color:red;"><b>Special Event: 2017/5/??～last about 20 days】</b></span><span style="color:red;">【<b>Coming Soon!</b>】</span>
+          </p>
+          The 2017 spring event will come in early May. Every admiral please prepare for the coming event!<br />
+          Information already known:<br />
+          There will be at least two ship availabe, including a large one and a destroy.<br />
+          The IJN escort carrier <a href="https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Taiy%C5%8D">Taiyō</a> is the most possible one. Other candidate: 
+          <a href="https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Kaiy%C5%8D">Kaiyō</a>, 
+          <a href="https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shin%27y%C5%8D">Shin'yō</a>.<br />
+          The battle is about north sea, but not the AL islands(Aleutian Islands).
+          <!--<p><a href="Downloads/2017winter.gif" class="image"><img alt="2017winter.gif" src="https://img.moegirl.org/common/6/61/2017winter.gif" width="760" height="100" data-file-width="760" data-file-height="100" /></a>
+          </p>-->
+        </div>  
+      </div>
+      <hr />
+     <div class="row">
+         <div class="col-xs-2"></div>
+         <div class="col-xs-6">
+          <p><span style="color:red;"><b>Special Event:【2017/2/11～2017/2/28】</b></span><span style="color:red;">【<b>Ended</b>】</span>
+          </p><p><a href="/2017winter" class="image"><img alt="2017winter.gif" src="https://img.moegirl.org/common/6/61/2017winter.gif" width="760" height="100" data-file-width="760" data-file-height="100" /></a>
+          </p>
+        </div>
+      </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-6">
+            <p><span style="color:red;"><b>Special Event:【2016/11/18～2016/12/09】</b></span><span style="color:red;">【<b>Ended</b>】</span>
+            </p><p><a href="/2016autumn" class="image"><img alt="2017winter.gif" src="https://img.moegirl.org/common/c/c9/2016autumn.gif" width="760" height="100" data-file-width="760" data-file-height="100" /></a>
+            </p>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-4">
+    <h3><strong>Wrtite your comment:</strong></h3>
+  </div>
+  </div>
+<!--<p data-th-inline="text">Welcome [[${#httpServletRequest.remoteUser}]]!</p>-->
+   <div class="row">
+  <div class="col-xs-2"></div>
   <div class="col-xs-6">
-        <table cellpadding="0" cellspacing="0" border="0" class="table-bordered ">
+        <table cellpadding="0" cellspacing="0" border="0" >
                 <tr>
-                    <th>Floor</th>
+                    <th align="center">Floor</th>
                     <th>Comment</th>
                     <th>Type</th>
                     <th>operation</th>
-                </tr>                
+                </tr>
                 <tr data-th-each="Kancolle :${Kancolle}">
-                   <td class="spec" style="text-align:center;vertical-align:middle;" data-th-text="${Kancolle.id}"></td>
-                    <td style="width:400px;word-wrap:break-all;word-break: break-all;" data-th-text="${Kancolle.comment}"></td>
+                   <td style="width:200px;word-wrap:break-all;word-break: break-all;" data-th-text="${Kancolle.name}"></td>
+                    <td style="width:600px;word-wrap:break-all;word-break: break-all;" data-th-text="${Kancolle.comment}"></td>
                     <td  style="text-align:center;vertical-align:middle;word" data-th-text="${Kancolle.CommentType}"></td>
-                    <td><a data-th-href="@{/Kancolle/edit/{id}(id=${Kancolle.id})}">edit</a></td>
+                    <!--<td><a data-th-href="@{/Kancolle/edit/{id}(id=${Kancolle.id})}">edit</a></td>-->
                 </tr>
             </table>
-            </div>
+        </div>
+      </div>
+<br />
          <div class="row">
+             <div class="col-xs-2"></div>
             <div class="col-xs-6">
-    
+
         <form role="form" data-th-action="@{/Kancolle/add}" name="addKancolleForm" method="post">
         <div class="form-group">
-            <h1>Wrtite your comment:</h1>
-           <input class="form-control" name="title" type="text" placeholder="Nickname"/>
-            <div class="center-block" style="height:30px"></div> 
+           <input class="form-control" name="name" type="text" placeholder="Nickname"/>
+            <div class="center-block" style="height:30px"></div>
             <textarea name="Comment" class="form-control" rows="10" placeholder="Your comment"/>
-            <label for="name">Choose a type:</label>
+            <label for="name">Choose a type:</label><br />
             <input type="radio" name="CommentType" value="Bump" checked="checked" /> Just bump
-            <input type="radio" name="CommentType" value="Help" /> Need help<br />
+            <input type="radio" name="CommentType" value="Help" /> Need help
             <input type="radio" name="CommentType" value="Information" /> Provide Information
             <input type="radio" name="CommentType" value="Pray" /> Pray for ship<br />
             <input type="submit" value="Submit Comment"/>
@@ -84,23 +136,22 @@
          </form>
          </div>
          </div>
-    
-        <hr />      
-        <p>go to <a data-th-href="@{/enemy}">enemy</a>page</p>
-        <hr />
+
+ <!--       <hr />
         Delete comments<br />
         <form name="deleteComments" method="delete" action="/Kancolle/delete">
-            Input the id of comments that you want to delete: <input type="text" name="id" /><br /> 
+            Input the id of comments that you want to delete: <input type="text" name="id" /><br />
             <input type="submit" value="Delete" />
             <input type="hidden" name="_csrf" value="a9bf8c07-152e-4f95-a5a3-81edb26e992c" /></form>
             <hr />
         <form data-th-action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
         </form>
-        
-        
-        
-        
+        -->
+
+
+
+
     </div>
     </div>
         <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>

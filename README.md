@@ -36,13 +36,50 @@ TODO : Please list key features of your project.
 
 ### Landing Page
 
-This is a greeting page for all users,temprory. Will be changed to a better one soon!
+There are two versions. Chinese version is still building. English version is available now.
+Click home can back to landing page.
+Click English Version can goto main page.
 ![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/home.png)
 
-### User Input Form
+### Main page
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mainpage.png)
 
-This page user can input there comment to communicate with both website owner and other users.
-![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/kancolle.png)
+##Content
+This page is the main page of Kancolle Station. The Top part is the content of Kancolle Station.
+It will be updated when new event comes. By click the image can goto the information page of event.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/content.png)
+
+##Comment
+The bottom is the comment part. Every player can leave comment here, to search help or provide information or just bump.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/comment.png)
+
+### event information page
+This page will provide all information of an event. In the future it will also contain the normal area.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/view.png)
+
+This page contain 4 parts.
+First part is the list at left. Can link to every area and events. Will achieve in the future.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/Arealist.png)
+
+Second part is on the top of page. Will list all the maps in this area or events. Can go to that part directly by click.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/Areainfo.png)
+
+Third part is on the middle. This part will provide the historical information of this area's all maps.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/Aboutarea.png)
+
+Last part is information of this map. In the chart, it contains the map's name, graph, bonus and some other basic information.
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mapinfo.png)
+
+There are four folders below, contain specific information of map requiement, enemy fleet, drops and strategy.
+
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/maprequire.png)
+
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/enemyfleet.png)
+
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/drop.png)
+
+![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/strategy.png)
+
 
 ### data page
 

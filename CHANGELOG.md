@@ -6,10 +6,28 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [Unreleased]
 ### coming soon
 
+# [1.50] - 2017-04-14
+### Added
+ - Add a model area information page.
+ - Add Event information on main page. 
+### Change
+ - Change the style of main page.
+ - Change security strategy to some pages.
+ - Change the link of Home button on the navigate bar.
+ - Change login to Manage, will link to a manage page in the future.
+### Fixed
+ - Fixed the link of some bottuns
+ - Fixed the page title to correct one.
+ - Remove the operation button in comment table.
+ - Fixed some display problem.
+### Future Version
+ - Add a manage page can manage comment.
+ - Modify the display of website.
+ 
 # [1.31] - 2017-03-26
 ### Change
  - Update a new home page
- - update a new login page
+ - Update a new login page
 ### Future version
  - Other page will be updated soon!
  - More data is coming!
@@ -46,7 +64,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - The website of this project.
  - The CHANGELOG.
  
- 
+[1.50]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.40...1.50
 [1.40]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.31...1.40
 [1.31]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.30...1.31
 [1.30]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.20...1.30
