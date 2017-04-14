@@ -44,12 +44,12 @@ Click English Version can goto main page.
 ### Main page
 ![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/mainpage.png)
 
-####Content
+#### Content
 This page is the main page of Kancolle Station. The Top part is the content of Kancolle Station.
 It will be updated when new event comes. By click the image can goto the information page of event.
 ![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/content.png)
 
-####Comment
+#### Comment
 The bottom is the comment part. Every player can leave comment here, to search help or provide information or just bump.
 ![](https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/blob/master/bmp/comment.png)
 
