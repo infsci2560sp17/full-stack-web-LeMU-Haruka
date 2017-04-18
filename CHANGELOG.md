@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [Unreleased]
 ### coming soon
 
+
+
+# [1.51] - 2017-04-17
+### Added
+ - Add a coming soon page.
+### Change
+ - Change the link of some pages.
+
 # [1.50] - 2017-04-14
 ### Added
  - Add a model area information page.
@@ -24,7 +32,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - Add a manage page can manage comment.
  - Modify the display of website.
  
-# [1.31] - 2017-03-26
+# [1.40] - 2017-03-26
 ### Change
  - Update a new home page
  - Update a new login page
@@ -64,6 +72,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
  - The website of this project.
  - The CHANGELOG.
  
+ 
+ 
+[1.51]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.50...1.51
 [1.50]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.40...1.50
 [1.40]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.31...1.40
 [1.31]: https://github.com/infsci2560sp17/full-stack-web-LeMU-Haruka/compare/1.30...1.31
