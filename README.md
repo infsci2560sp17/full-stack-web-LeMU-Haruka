@@ -26,11 +26,12 @@ https://lemu-harukaweb.herokuapp.com/
 
 ## Key Features
 
-TODO : Please list key features of your project.
+* A comment board allows use leave massage with a nickname whatever he want to be called.
+* A main page with newest information of Kancolle
+* A map information page with map information and personal strategy
+* Use MVC frame with a database provided by Heroku to say data
+* Can delete or update data in database
 
-* Key Feature 1
-* Key Feature 2
-* Key Feature N
 
 ## Project Details
 
